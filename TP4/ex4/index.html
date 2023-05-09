@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function affiche2(){
+            a=parseInt(document.getElementById("text1").value);
+            b=parseInt(document.getElementById("text2").value);
+            s=document.getElementById("select").value;
+            if(s=="+")
+            document.getElementById("result").value=a+b;
+            if(s=="-")
+            document.getElementById("result").value=a-b;
+            if(s=="*")
+            document.getElementById("result").value=a*b;
+            if(s=="/")
+            document.getElementById("result").value=a/b;
+            if(s=="%")
+            document.getElementById("result").value=a%b;
+        }
+        function selection(){
+            s=document.getElementById("select").value;
+            document.getElementById("span").innerHTML=s;
+
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="text1">
+<span id="span">+</span>
+<input type="text" id="text2">
+<span>=</span>
+<input type="text" id="result">
+<select onchange="selection()" id="select">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+</select>
+<input type="button" value="click" onclick="affiche2()">
+</body>
+</html>

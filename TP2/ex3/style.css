@@ -1,0 +1,25 @@
+#form{
+text-align:left;
+border: 1px solid red;
+}
+#input{
+    padding: 10px;
+    background-color:blue;
+}
+#label{
+    padding: 10px;
+    background-color: red;
+}
+#div{
+    text-align: right;
+}
+input{
+    display: inline-block;
+  margin-right: 10px;
+}
+#postal{
+    width: 50px;
+}
+textarea{
+    height: 15px;
+}

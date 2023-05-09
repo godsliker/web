@@ -1,0 +1,10 @@
+h1{
+    color: red;
+}
+form{
+    text-align: center;
+}
+div{
+    display: flex ;
+    align-items: center;
+}

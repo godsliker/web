@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #form{
+        text-align:left;
+        border: 1px solid red;
+        }
+        #input{
+            padding: 10px;
+            background-color:blue;
+        }
+        #label{
+            padding: 10px;
+            background-color: red;
+        }
+        #div{
+            text-align: right;
+        }
+        input{
+            display: inline-block;
+          margin-right: 10px;
+        }
+        #postal{
+            width: 50px;
+        }
+        textarea{
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <table>
+            <tr>
+                <td>
+                <label>civilité&nbsp;&nbsp;</label>
+                <br>
+                <label for="nom">NOM/Prenom</label>
+                <br>
+                <label for="adr">Adresse</label>
+                <br>
+                <label for="postal">NO POSTAL</label>/<label for="localité">localité</label>
+                <br>
+                <label for="pays">pays</label>
+                <br>
+                <label >Platforme(s)</label>
+                <br>
+                <label for="apps">applications</label>
+                </td>
+                <td>
+                    <input value="Monsieur" type="radio" name="gender" id="gendera" checked><label for="gendera">Monsieur</label>
+                    <input value="Madame" type="radio" name="gender" id="genderb"><label for="genderb">Madame</label>
+                    <input value="Mademoiselle" type="radio" name="gender" id="genderc"><label for="genderc">Madamemoiselle</label>
+                    <br>
+                    <input type="text" id="nom">
+                    <br>
+                    <textarea id="adr">rue no boite postale</textarea>
+                    <br>
+                    <input type="text" id="postal">
+                    <input type="text" id="localité" value="tunis">
+                    <br>
+                    <select id="pays">
+                        <option>algérie</option>
+                        <option>libye</option>
+                        <option>Maroc</option>
+                        <option selected>Tunisie</option>
+                    </select>
+                    <br>
+                    <input id="windows" type="checkbox" checked>
+                    <label for="windows">windows</label>
+                    <input id="maconishi" type="checkbox" checked>
+                    <label for="maconishi">maconishi</label>
+                    <input id="unix" type="checkbox" checked>
+                    <label for="unix">unix</label>
+                    <br>
+                    <select id="apps" size="4">
+                        <option>bureautique</option>
+                        <option>DAO</option>
+                        <option>SGBD</option>
+                        <option>internet </option>
+                    </select>
+                    </td>
+            </tr>
+            </table>
+        </div>
+        <div id="div">
+        <input type="reset" value="effacer">
+        <input type="submit" value="soumettre formulaire">
+        </div>
+    </form>
+</body>
+</html>

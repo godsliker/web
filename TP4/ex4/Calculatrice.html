@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <script> 
+        function func(){
+            document.getElementById("test").innerHTML=document.getElementById("op").value;
+        }
+        function Operation(){
+            var num1=parseInt(document.getElementById("first").value);
+            var num2=parseInt(document.getElementById("second").value);
+            var op=document.getElementById("op").value;
+            var resultat;
+            switch(op){
+                case "+":
+                    resultat=num1+num2;
+                    break;
+                case "-":
+                    resultat=num1-num2;
+                    break;
+                case "*":
+                    resultat=num1*num2;
+                    break;
+                case "/":
+                    resultat=num1/num2;
+                    break;
+                case "%":
+                    resultat=num1%num2;
+                    break;
+                default:
+                    resultat="Erreur : Operateur invalide";
+            }
+            document.getElementById("result").value=resultat;
+        }
+    </script>
+    <head> 
+        <title> Calculatrice </title>
+        <style>
+            .center{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body> 
+        <h1 style="text-align: center;size: 100px"><strong> Calculatrice </strong></h1>
+        <div class="center">
+        <input id="first" type="text">
+        <span id="test">+</span>
+        <input id="second" type="text">
+        <label> = </label> 
+        <input id="result" type="text">
+        <br><br>
+        <label for="op"> Choisir l'opérateur :  </label>
+        <select id="op" name="op" onchange="func()">
+            <option value="+"> addition (+) </option>
+            <option value="-"> soustraction (-) </option>
+            <option value="*"> multiplication (*) </option>
+            <option value="/"> division (/) </option>
+            <option value="%"> modulo (%) </option>
+        </select>
+        <button onclick="Operation()"> calculer </button>
+        </div> 
+    </body>
+</html>
